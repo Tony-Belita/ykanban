@@ -19,7 +19,7 @@ export default function RootLayout({
  }) {
    return (
       <html lang="fr" className={pjs.className}>
-        <body>
+        <body className="pb-24 h-screen overflow-hidden">{/* mise à jour du style */}
           <Providers>
             <Navbar />
             {children}
