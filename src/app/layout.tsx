@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "../redux/provider";
+import Navbar from "./components/navbar";
 
 
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"], display: "swap" });
@@ -20,6 +21,7 @@ export default function RootLayout({
       <html lang="fr" className={pjs.className}>
         <body>
           <Providers>
+            <Navbar />
             {children}
           </Providers>
         </body>
